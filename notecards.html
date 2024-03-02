@@ -16,11 +16,12 @@
   }
   .note-card {
     background-color: white;
+    border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
-    width: calc(33.33% - 20px);
+    margin-bottom: 0;
+    width: calc(33.33% - 4px); /* Each card takes 1/3 of the available width minus border */
+    height: 5in;
     box-sizing: border-box;
   }
 </style>
@@ -31,18 +32,24 @@
     <h2>Note Card 1</h2>
     <p>
       <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+      <br>
+      <strong>Details:</strong> It was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. The values of the Agile Manifesto are fundamental to the success of agile methodologies in modern project management.
     </p>
   </div>
   <div class="note-card">
     <h2>Note Card 2</h2>
     <p>
       <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
+      <br>
+      <strong>Details:</strong> Sprint Planning involves selecting work from the Product Backlog, Sprint Development focuses on daily reporting and execution against selected stories, and Sprint Retro & Review are crucial for continuous improvement.
     </p>
   </div>
   <div class="note-card">
     <h2>Note Card 3</h2>
     <p>
-      <strong>Main Point:</strong> Sprint Planning involves selecting work from the Product Backlog, Sprint Development focuses on daily reporting and execution against selected stories, and Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
+      <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
+      <br>
+      <strong>Details:</strong> All aspects of the Iron Triangle - scope, schedule, and budget - are constraints and costs to the organization. Understanding these constraints is crucial for effective project management.
     </p>
   </div>
 
@@ -50,13 +57,17 @@
   <div class="note-card">
     <h2>Note Card 4</h2>
     <p>
-      <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
+      <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
+      <br>
+      <strong>Details:</strong> Agile projects require a shared vision, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile for successful implementation.
     </p>
   </div>
   <div class="note-card">
     <h2>Note Card 5</h2>
     <p>
-      <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
+      <strong>Main Point:</strong> Every project must have a charter, plan, documentation, design, and testing to be successful.
+      <br>
+      <strong>Details:</strong> Agile methodologies prioritize varying scope to target what the customer needs, thus reducing waste by delivering a minimum viable product (MVP) that meets project objectives.
     </p>
   </div>
 </body>
