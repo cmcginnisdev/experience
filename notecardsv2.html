@@ -38,6 +38,14 @@
   .note-card:nth-child(n+5) {
     page-break-before: always; /* Page break before the 5th card */
   }
+  .card-content {
+    padding: 20px;
+  }
+  .card-content h2,
+  .card-content p {
+    margin: 0;
+    padding: 0;
+  }
   @media print {
     .page {
       margin: 0;
@@ -51,8 +59,14 @@
     <div class="page">
       <!-- Card 1 -->
       <div class="note-card">
-        <p>Note Card 1</p>
-        <p>Dummy text for testing.</p>
+        <div class="card-content">
+            <h2>Note Card 1</h2>
+            <p>
+              <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+              <br><br>
+              <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
+            </p>
+          </div>
       </div>
       <!-- Card 2 -->
       <div class="note-card">
