@@ -28,6 +28,12 @@
     border: 1px solid black; /* 1px black border */
     box-sizing: border-box;
   }
+  .page::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 1;
+  }
   @media print {
     .page {
       margin: 0;
