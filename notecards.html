@@ -11,69 +11,110 @@
     margin: 0;
     padding: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .page {
+    width: 8.5in;
+    height: 11in;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
   }
   .note-card {
     background-color: white;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 20px;
-    margin-bottom: 20px;
-    width: 5in;
+    margin: 0;
+    width: 3in;
     height: 3in;
     box-sizing: border-box;
+    overflow: hidden;
+  }
+  .note-card h2,
+  .note-card p {
+    margin: 0;
+    padding: 0;
   }
 </style>
 </head>
 <body>
-  <!-- Page 1 -->
-  <div class="note-card">
-    <h2>Note Card 1</h2>
-    <p>
-      <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
-      <br><br>
-      <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
-    </p>
-  </div>
-  <div class="note-card">
-    <h2>Note Card 2</h2>
-    <p>
-      <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
-      <br><br>
-      <strong>Details:</strong> Sprint Planning starts with the Product Owner selecting work from the Product Backlog. The Sprint Development focuses on daily reporting and execution against selected stories, facilitated by the Scrum Master. Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
-    </p>
-  </div>
-  <div class="note-card">
-    <h2>Note Card 3</h2>
-    <p>
-      <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
-      <br><br>
-      <strong>Details:</strong> Scope, schedule, and budget are all constraints and costs to the organization. Understanding these constraints is crucial for effective project management in any methodology.
-    </p>
-  </div>
-  
-  <!-- Page 2 -->
-  <div class="note-card">
-    <h2>Note Card 4</h2>
-    <p>
-      <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
-      <br><br>
-      <strong>Details:</strong> Agile projects require a shared vision, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile for successful implementation.
-    </p>
-  </div>
-  <div class="note-card">
-    <h2>Note Card 5</h2>
-    <p>
-      <strong>Main Point:</strong> Every project must have a charter, plan, documentation, design, and testing to be successful.
-      <br><br>
-      <strong>Details:</strong> Agile methodologies prioritize varying scope to target what the customer needs, thus reducing waste by delivering a minimum viable product (MVP) that meets project objectives.
-    </p>
+  <div class="page">
+    <!-- Page 1 -->
+    <div class="note-card">
+      <h2>Note Card 1</h2>
+      <p>
+        <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+        <br><br>
+        <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 2</h2>
+      <p>
+        <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
+        <br><br>
+        <strong>Details:</strong> Sprint Planning starts with the Product Owner selecting work from the Product Backlog. The Sprint Development focuses on daily reporting and execution against selected stories, facilitated by the Scrum Master. Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 3</h2>
+      <p>
+        <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
+        <br><br>
+        <strong>Details:</strong> Scope, schedule, and budget are all constraints and costs to the organization. Understanding these constraints is crucial for effective project management in any methodology.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 4</h2>
+      <p>
+        <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
+        <br><br>
+        <strong>Details:</strong> Agile projects require a shared vision, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile for successful implementation.
+      </p>
+    </div>
   </div>
 
-  <!-- Add more note cards here as needed -->
-
+  <div class="page">
+    <!-- Page 2 -->
+    <div class="note-card">
+      <h2>Note Card 5</h2>
+      <p>
+        <strong>Main Point:</strong> False comparisons across types of projects abound.
+        <br><br>
+        <strong>Details:</strong> Many objections to Agile are based on misconceptions, such as the belief that it lacks critical elements like design, testing, or documentation. However, every successful project must include essential components such as a charter, plan, documentation, design, and testing.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 6</h2>
+      <p>
+        <strong>Main Point:</strong> Every Agile project should have specific characteristics for success.
+        <br><br>
+        <strong>Details:</strong> These characteristics include a shared vision robust to change, whole teams consisting of both customers and cross-functional team members, incremental delivery through small "sprints," and continuous integration and testing to ensure the quality of increments.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 7</h2>
+      <p>
+        <strong>Main Point:</strong> Frameworks like Scrum, SAFe, and Disciplined Agile provide structure for Agile implementation.
+        <br><br>
+        <strong>Details:</strong> While various frameworks exist, they all share the same underlying principles of Agile. They define roles and processes to scale Agile methodologies and provide a shared language for teams.
+      </p>
+    </div>
+    <div class="note-card">
+      <h2>Note Card 8</h2>
+      <p>
+        <strong>Main Point:</strong> The Iron Triangle explains the relationship between scope, schedule, and budget in project management.
+        <br><br>
+        <strong>Details:</strong> Changes in one aspect of the Iron Triangle (scope, schedule, or budget) affect the other aspects. For example, increasing the scope may require more time and budget, while reducing the budget may necessitate cutting scope or extending the schedule.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
+
 
 
