@@ -10,15 +10,23 @@
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   .page {
-    width: 8.5in;
-    height: 11in;
+    width: 11in; /* Standard letter size in landscape */
+    height: 8.5in;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    page-break-after: always;
+  }
+  .card-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between card groups */
   }
   .note-card {
     background-color: white;
@@ -26,97 +34,63 @@
     border-radius: 0;
     padding: 20px;
     margin: 0;
-    width: 3in;
-    height: 5in;
+    width: 5in;
+    height: 3in;
     box-sizing: border-box;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-right: 20px; /* Space between cards */
   }
   .note-card h2,
   .note-card p {
     margin: 0;
     padding: 0;
   }
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
 </style>
 </head>
 <body>
   <div class="page">
     <!-- Page 1 -->
-    <div class="note-card">
-      <h2>Note Card 1</h2>
-      <p>
-        <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
-        <br><br>
-        <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
-      </p>
+    <div class="card-group">
+      <div class="note-card">
+        <h2>Note Card 1</h2>
+        <p>
+          <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+          <br><br>
+          <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
+        </p>
+      </div>
+      <div class="note-card">
+        <h2>Note Card 2</h2>
+        <p>
+          <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
+          <br><br>
+          <strong>Details:</strong> Sprint Planning starts with the Product Owner selecting work from the Product Backlog. The Sprint Development focuses on daily reporting and execution against selected stories, facilitated by the Scrum Master. Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
+        </p>
+      </div>
     </div>
-    <div class="note-card">
-      <h2>Note Card 2</h2>
-      <p>
-        <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
-        <br><br>
-        <strong>Details:</strong> Sprint Planning starts with the Product Owner selecting work from the Product Backlog. The Sprint Development focuses on daily reporting and execution against selected stories, facilitated by the Scrum Master. Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
-      </p>
-    </div>
-    <div class="note-card">
-      <h2>Note Card 3</h2>
-      <p>
-        <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
-        <br><br>
-        <strong>Details:</strong> Scope, schedule, and budget are all constraints and costs to the organization. Understanding these constraints is crucial for effective project management in any methodology.
-      </p>
-    </div>
-    <div class="note-card">
-      <h2>Note Card 4</h2>
-      <p>
-        <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
-        <br><br>
-        <strong>Details:</strong> Agile projects require a shared vision, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile for successful implementation.
-      </p>
-    </div>
-  </div>
-
-  <div class="page">
     <!-- Page 2 -->
-    <div class="note-card">
-      <h2>Note Card 5</h2>
-      <p>
-        <strong>Main Point:</strong> Every project must have a charter, plan, documentation, design, and testing to be successful.
-        <br><br>
-        <strong>Details:</strong> Agile methodologies prioritize varying scope to target what the customer needs, thus reducing waste by delivering a minimum viable product (MVP) that meets project objectives.
-      </p>
-    </div>
-    <div class="note-card">
-      <h2>Note Card 6</h2>
-      <p>
-        <strong>Main Point:</strong> Scrum, SAFe, or Disciplined Agile are all frameworks that help define roles and processes to scale and implement the methodology of Agile.
-        <br><br>
-        <strong>Details:</strong> These frameworks provide a shared language for agile teams but the method remains the same - emphasizing speed, flexibility, and continuous improvement.
-      </p>
-    </div>
-    <div class="note-card">
-      <h2>Note Card 7</h2>
-      <p>
-        <strong>Main Point:</strong> The goals and requirements of each project management method vary, with Agile focusing on speed, Traditional on efficiency, and Lean on innovation.
-        <br><br>
-        <strong>Details:</strong> Each method requires specific expertise and goals to achieve successful project outcomes.
-      </p>
-    </div>
-    <div class="note-card">
-      <h2>Note Card 8</h2>
-      <p>
-        <strong>Main Point:</strong> False comparisons across types of projects abound, with objections often based on misconceptions about Agile methodologies.
-        <br><br>
-        <strong>Details:</strong> Every successful project, regardless of methodology, requires a clear charter, plan, documentation, design, and testing process.
-      </p>
+    <div class="card-group">
+      <div class="note-card">
+        <h2>Note Card 3</h2>
+        <p>
+          <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
+          <br><br>
+          <strong>Details:</strong> Scope, schedule, and budget are all constraints and costs to the organization. Understanding these constraints is crucial for effective project management in any methodology.
+        </p>
+      </div>
+      <div class="note-card">
+        <h2>Note Card 4</h2>
+        <p>
+          <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
+          <br><br>
+          <strong>Details:</strong> Agile projects require a shared vision, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile for successful implementation.
+        </p>
+      </div>
     </div>
   </div>
 </body>
-</html
+</html>
+
 
 
 
