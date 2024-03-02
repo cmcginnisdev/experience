@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Note Cards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .page {
+    width: 11in; /* Standard letter size in landscape mode */
+    height: 8.5in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start; /* Ensures no space between rows */
+    page-break-after: always; /* Page break after each page */
+  }
+  .note-card {
+    width: 5in; /* 5 inches wide */
+    height: 3in; /* 3 inches tall */
+    margin: 0; /* No margin */
+    border: 1px solid black; /* 1px black border */
+    box-sizing: border-box;
+  }
+  .note-card:nth-child(n+5) {
+    page-break-before: always; /* Page break before the 5th card */
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-content h2,
+  .card-content p {
+    margin: 0;
+    padding: 0;
+  }
+  @media print {
+    .page {
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="page-container">
+    <!-- Page 1 -->
+    <div class="page">
+      <!-- Card 1 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Agile Manifesto</h2>
+            <p>
+              <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+              <br><br>
+              <strong>Details:</strong> Codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
+            </p>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Sprint Basics</h2>
+            <p>
+              <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
+              <br><br>
+              <strong>Details:</strong> Sprint Planning starts with the Product Owner selecting work from the Product Backlog. Sprint Development focuses on daily reporting and execution against selected stories. Sprint Retro & Review are ceremonies for gaining feedback and driving continuous improvement.
+            </p>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Sprint Development</h2>
+            <p>
+              <strong>Main Point:</strong> Sprint Development begins with the daily standup, focusing on daily reporting and execution against selected stories to deliver a shippable product increment.
+              <br><br>
+              <strong>Details:</strong> Teams analyze, build, and test the work, facilitated by the Scrum Master. Meetings are held, and the Product Owner determines if a Story is complete to meet stakeholder needs.
+            </p>
+          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Sprint Retro & Review</h2>
+            <p>
+              <strong>Main Point:</strong> Sprint Retro and Review are ceremonies to gain feedback and drive continuous improvement into the team.
+              <br><br>
+              <strong>Details:</strong> Sprint Review allows stakeholders to provide feedback on the product increment. Sprint Retrospective evaluates the sprint and identifies opportunities for improvement in the next sprint.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-container">
+    <!-- Page 2 -->
+    <div class="page">
+      <!-- Card 5 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Iron Triangle</h2>
+            <p>
+              <strong>Main Point:</strong> The Iron Triangle includes Scope, Schedule, and Budget, which are constraints and costs to the organization in project management.
+              <br><br>
+              <strong>Details:</strong> More schedule means a delay of project benefits, more budget means more capital invested, and more scope means a larger product to support or maintain.
+            </p>
+          </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Project Management Methods</h2>
+            <p>
+              <strong>Main Point:</strong> Three types of project management are Agile, Traditional, and Lean, each varying constraints on scope, schedule, and budget.
+              <br><br>
+              <strong>Details:</strong> Agile focuses on speed, Traditional on efficiency, and Lean on innovation. Understanding the goals and requirements of each method is essential for effective project management.
+            </p>
+          </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>False Comparisons</h2>
+            <p>
+              <strong>Main Point:</strong> False comparisons across types of projects abound, such as objections that Agile is missing critical elements like design, testing, or documentation.
+              <br><br>
+              <strong>Details:</strong> Every successful project must have key elements including a charter, plan, documentation, design, and testing. Agile methodologies prioritize varying scope to target what the customer needs, delivering a minimum viable product (MVP).
+            </p>
+          </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="note-card">
+        <div class="card-content">
+            <h2>Agile Project Essentials</h2>
+            <p>
+              <strong>Main Point:</strong> Agile projects require shared vision robust to change, whole teams, incremental delivery, and continuous integration & testing.
+              <br><br>
+              <strong>Details:</strong> Frameworks like Scrum, SAFe, or Disciplined Agile help define roles and processes to scale Agile methodologies, providing a shared language while the method remains consistent.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
