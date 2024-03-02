@@ -16,12 +16,13 @@
     min-height: 100vh;
   }
   .page {
-    width: 8.5in;
-    height: 11in;
+    width: 11in;
+    height: 8.5in;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
+    page-break-after: always; /* Page break after each page */
   }
   .note-card {
     background-color: white;
@@ -29,15 +30,20 @@
     border-radius: 0;
     padding: 20px;
     margin: 0;
-    width: 3in;
-    height: 3in;
+    width: 5in; /* 3 inches width */
+    height: 3in; /* 5 inches height */
     box-sizing: border-box;
     overflow: hidden;
+    margin-bottom: 20px;
+    box-sizing: border-box;
   }
   .note-card h2,
   .note-card p {
     margin: 0;
     padding: 0;
+  }
+  @page {
+    size: landscape; /* Set the page to landscape mode */
   }
 </style>
 </head>
@@ -77,44 +83,45 @@
       </p>
     </div>
   </div>
-
   <div class="page">
     <!-- Page 2 -->
+    <!-- Add more note cards here -->
     <div class="note-card">
       <h2>Note Card 5</h2>
       <p>
         <strong>Main Point:</strong> False comparisons across types of projects abound.
         <br><br>
-        <strong>Details:</strong> Many objections to Agile are based on misconceptions, such as the belief that it lacks critical elements like design, testing, or documentation. However, every successful project must include essential components such as a charter, plan, documentation, design, and testing.
+        <strong>Details:</strong> Many times objections one hears about using Agile is that it's missing critical elements, such as design, testing, or documentation. These are all wrong. In fact, every project must have the following to be successful: Charter, Plan, Documentation, Design, Testing.
       </p>
     </div>
     <div class="note-card">
       <h2>Note Card 6</h2>
       <p>
-        <strong>Main Point:</strong> Every Agile project should have specific characteristics for success.
+        <strong>Main Point:</strong> Every Agile project needs shared vision robust to change, whole teams, incremental delivery, and continuous integration & testing.
         <br><br>
-        <strong>Details:</strong> These characteristics include a shared vision robust to change, whole teams consisting of both customers and cross-functional team members, incremental delivery through small "sprints," and continuous integration and testing to ensure the quality of increments.
+        <strong>Details:</strong> These elements help in minimizing scope to target just what the customer needs, reducing waste by delivering a minimum viable product (MVP) that meets project objectives.
       </p>
     </div>
     <div class="note-card">
       <h2>Note Card 7</h2>
       <p>
-        <strong>Main Point:</strong> Frameworks like Scrum, SAFe, and Disciplined Agile provide structure for Agile implementation.
+        <strong>Main Point:</strong> Scrum, SAFe, or Disciplined Agile are frameworks that help define roles and processes to scale and implement Agile methodology.
         <br><br>
-        <strong>Details:</strong> While various frameworks exist, they all share the same underlying principles of Agile. They define roles and processes to scale Agile methodologies and provide a shared language for teams.
+        <strong>Details:</strong> They provide a shared language, but the method remains the same.
       </p>
     </div>
     <div class="note-card">
       <h2>Note Card 8</h2>
       <p>
-        <strong>Main Point:</strong> The Iron Triangle explains the relationship between scope, schedule, and budget in project management.
+        <strong>Main Point:</strong> The Iron Triangle includes scope, schedule, and budget, which are constraints and costs to the organization.
         <br><br>
-        <strong>Details:</strong> Changes in one aspect of the Iron Triangle (scope, schedule, or budget) affect the other aspects. For example, increasing the scope may require more time and budget, while reducing the budget may necessitate cutting scope or extending the schedule.
+        <strong>Details:</strong> Understanding these constraints is crucial for effective project management.
       </p>
     </div>
   </div>
 </body>
 </html>
+
 
 
 
