@@ -10,48 +10,42 @@
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
   }
   .page {
-    width: 11in; /* Standard letter size in landscape */
+    width: 11in;
     height: 8.5in;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  .card-group {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Space between card groups */
-  }
   .note-card {
     background-color: white;
     border: 2px solid black;
-    border-radius: 0;
-    padding: 20px;
-    margin: 0;
+    border-radius: 10px;
     width: 5in;
     height: 3in;
+    margin: 20px; /* Adjust as needed for spacing around the group of 4 cards */
     box-sizing: border-box;
-    overflow: hidden;
-    margin-right: 20px; /* Space between cards */
+    float: left;
   }
-  .note-card h2,
-  .note-card p {
+  .card-content {
+    padding: 20px;
+  }
+  .card-content h2,
+  .card-content p {
     margin: 0;
     padding: 0;
   }
 </style>
 </head>
 <body>
+  <!-- Page 1 -->
   <div class="page">
-    <!-- Page 1 -->
-    <div class="card-group">
-      <div class="note-card">
+    <!-- Card 1 -->
+    <div class="note-card">
+      <div class="card-content">
         <h2>Note Card 1</h2>
         <p>
           <strong>Main Point:</strong> Agile Manifesto prioritizes individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
@@ -59,7 +53,10 @@
           <strong>Details:</strong> Agile Manifesto was codified in 2001 in Snowbird by Scrum, XP, and DSDM practitioners. These values are fundamental to why agile works and continues to be used on projects with high uncertainty today.
         </p>
       </div>
-      <div class="note-card">
+    </div>
+    <!-- Card 2 -->
+    <div class="note-card">
+      <div class="card-content">
         <h2>Note Card 2</h2>
         <p>
           <strong>Main Point:</strong> Sprint basics include Sprint Planning, Sprint Development, and Sprint Retro & Review, with a Sprint being a timebox for completing work, usually ranging from two weeks to a month.
@@ -68,9 +65,9 @@
         </p>
       </div>
     </div>
-    <!-- Page 2 -->
-    <div class="card-group">
-      <div class="note-card">
+    <!-- Card 3 -->
+    <div class="note-card">
+      <div class="card-content">
         <h2>Note Card 3</h2>
         <p>
           <strong>Main Point:</strong> The Iron Triangle explains project management methods, including Agile, Traditional, and Lean, each with varying constraints on scope, schedule, and budget.
@@ -78,7 +75,10 @@
           <strong>Details:</strong> Scope, schedule, and budget are all constraints and costs to the organization. Understanding these constraints is crucial for effective project management in any methodology.
         </p>
       </div>
-      <div class="note-card">
+    </div>
+    <!-- Card 4 -->
+    <div class="note-card">
+      <div class="card-content">
         <h2>Note Card 4</h2>
         <p>
           <strong>Main Point:</strong> Agile focuses on speed and flexibility, Traditional on efficiency, and Lean on innovation, with each method requiring specific goals and expertise.
@@ -88,9 +88,57 @@
       </div>
     </div>
   </div>
+
+  <!-- Page 2 -->
+  <div class="page">
+    <!-- Card 5 -->
+    <div class="note-card">
+      <div class="card-content">
+        <h2>Note Card 5</h2>
+        <p>
+          <strong>Main Point:</strong> False comparisons across types of projects abound, such as objections that Agile is missing critical elements like design, testing, or documentation.
+          <br><br>
+          <strong>Details:</strong> Every successful project, regardless of methodology, must have key elements including a charter, plan, documentation, design, and testing. Agile methodologies prioritize varying scope to target what the customer needs, reducing waste by delivering a minimum viable product (MVP) that meets project objectives.
+        </p>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="note-card">
+      <div class="card-content">
+        <h2>Note Card 6</h2>
+        <p>
+          <strong>Main Point:</strong> To be successful, every Agile project needs shared vision robust to change, whole teams, incremental delivery, continuous integration & testing, and frameworks like Scrum, SAFe, or Disciplined Agile.
+          <br><br>
+          <strong>Details:</strong> Scrum, SAFe, and Disciplined Agile are frameworks that define roles and processes to scale Agile methodologies. They provide a shared language while the method remains consistent.
+        </p>
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="note-card">
+      <div class="card-content">
+        <h2>Note Card 7</h2>
+        <p>
+          <strong>Main Point:</strong> The Iron Triangle helps explain project management methods, including Agile, Traditional, and Lean, with each varying constraints on scope, schedule, and budget.
+          <br><br>
+          <strong>Details:</strong> Agile varies scope against fixed budget and schedule, while Traditional varies budget against fixed scope and schedule, and Lean varies schedule against fixed scope and budget.
+        </p>
+      </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="note-card">
+      <div class="card-content">
+        <h2>Note Card 8</h2>
+        <p>
+          <strong>Main Point:</strong> The goals and requirements of each project management method are essential for understanding their place in the project manager's arsenal.
+          <br><br>
+          <strong>Details:</strong> Agile focuses on speed and requires trust to minimize scope for fast value delivery. Traditional aims for efficiency and requires efficiency to deliver the lowest cost on time and budget. Lean focuses on innovation and requires expertise to minimize the time of delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
-
 
 
 
