@@ -11,13 +11,13 @@
     margin: 0;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
   .page {
     width: 8.5in;
     height: 11in;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -26,12 +26,18 @@
   .note-card {
     background-color: white;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 20px;
-    margin-bottom: 20px;
-    width: 5in;
-    height: 3in;
+    margin: 0;
+    width: 6in;
+    height: 4in;
     box-sizing: border-box;
+    overflow: hidden;
+  }
+  .note-card h2,
+  .note-card p {
+    margin: 0;
+    padding: 0;
   }
 </style>
 </head>
